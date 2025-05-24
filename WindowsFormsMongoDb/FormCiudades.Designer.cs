@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.dataGridViewCiudades = new System.Windows.Forms.DataGridView();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.outButton = new System.Windows.Forms.Button();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCiudades)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,6 +46,11 @@
             this.dataGridViewCiudades.Size = new System.Drawing.Size(601, 272);
             this.dataGridViewCiudades.TabIndex = 0;
             this.dataGridViewCiudades.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCiudades_CellDoubleClick);
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
             // 
             // addButton
             // 
@@ -75,11 +80,7 @@
             this.outButton.TabIndex = 3;
             this.outButton.Text = "Salir";
             this.outButton.UseVisualStyleBackColor = true;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
+            this.outButton.Click += new System.EventHandler(this.outButton_Click);
             // 
             // FormCiudades
             // 
